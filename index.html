@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Jenny Lee</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+font-family:'Poppins',sans-serif;
+background:#FCFCFC;
+color:#222;
+
+}
+
+.container{
+
+max-width:1200px;
+
+margin:auto;
+
+min-height:100vh;
+
+display:flex;
+
+align-items:center;
+
+padding:60px 40px;
+
+}
+
+.hero{
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+gap:90px;
+
+width:100%;
+
+}
+
+.content{
+
+flex:1;
+
+max-width:700px;
+
+}
+
+.photo{
+
+flex:1;
+
+display:flex;
+
+justify-content:center;
+
+}
+
+.photo img{
+
+width:390px;
+
+height:390px;
+
+object-fit:cover;
+
+border-radius:32px;
+
+box-shadow:
+0 25px 60px rgba(0,0,0,.08);
+
+}
+
+h1{
+
+font-size:72px;
+
+font-weight:700;
+
+letter-spacing:-2px;
+
+margin-bottom:12px;
+
+}
+
+h2{
+
+font-size:26px;
+
+font-weight:500;
+
+color:#666;
+
+margin-bottom:30px;
+
+}
+
+p{
+
+font-size:20px;
+
+font-weight:200;
+
+line-height:1.9;
+
+color:#555;
+
+margin-bottom:45px;
+
+}
+
+.buttons{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:18px;
+
+width:100%;
+
+}
+
+.button-card{
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:flex-start;
+
+padding:24px;
+
+background:#fff;
+
+border-radius:22px;
+
+border:1px solid #ECECEC;
+
+text-decoration:none;
+
+transition:.25s ease;
+
+box-shadow:0 10px 30px rgba(0,0,0,.03);
+
+min-height:115px;
+
+}
+
+.button-card:hover{
+
+transform:translateY(-6px);
+
+box-shadow:0 22px 45px rgba(0,0,0,.08);
+
+border-color:#D8D8D8;
+
+}
+
+.button-title{
+
+font-size:18px;
+
+font-weight:600;
+
+color:#111;
+
+margin-bottom:8px;
+
+}
+
+.button-subtitle{
+
+font-size:14px;
+
+font-weight:300;
+
+color:#777;
+
+line-height:1.5;
+
+}
+
+@media(max-width:1000px){
+
+.hero{
+
+flex-direction:column-reverse;
+
+text-align:center;
+
+gap:50px;
+
+}
+
+.content{
+
+max-width:100%;
+
+}
+
+.photo img{
+
+width:300px;
+
+height:300px;
+
+}
+
+.buttons{
+
+grid-template-columns:1fr;
+
+}
+
+.button-card{
+
+align-items:center;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="hero">
+
+<div class="content">
+
+<h1>Jenny Lee</h1>
+
+<h2>Learning Designer • Experience Designer • Educator</h2>
+
+<p>
+
+I create thoughtful, human-centered experiences that make learning, technology, and information more engaging and accessible. Explore my work, view my résumé, or connect with me to learn more.
+
+</p>
+
+<div class="buttons">
+
+<a class="button-card"
+href="https://YOURPORTFOLIOURL.com"
+target="_blank">
+
+<span class="button-title">
+Explore My Work
+</span>
+
+<span class="button-subtitle">
+Featured projects & case studies
+</span>
+
+</a>
+
+<a class="button-card"
+href="https://YOURRESUMEURL.com"
+target="_blank">
+
+<span class="button-title">
+View Resume
+</span>
+
+<span class="button-subtitle">
+Experience, education & skills
+</span>
+
+</a>
+
+<a class="button-card"
+href="www.linkedin.com/in/jjglee"
+target="_blank">
+
+<span class="button-title">
+Connect on LinkedIn
+</span>
+
+<span class="button-subtitle">
+Let's stay connected
+</span>
+
+</a>
+
+</div>
+
+</div>
+
+<div class="photo">
+
+<img src="jenny-tofu.png" alt="Portrait of Jenny Lee">
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
+
