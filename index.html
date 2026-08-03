@@ -36,12 +36,20 @@
             width: min(500px, 90vw);
             height: auto;
             display: block;
-            transition: transform 0.25s ease;
             cursor: url("mouse.png") 0 0, pointer;
+
+            transition:
+                transform .30s ease,
+                filter .30s ease;
         }
 
         .portfolio-link:hover img {
             transform: scale(1.06);
+
+            filter:
+                drop-shadow(0 0 12px rgba(255,255,220,.9))
+                drop-shadow(0 0 30px rgba(255,245,180,.7))
+                drop-shadow(0 0 55px rgba(255,240,150,.5));
         }
 
         .portfolio-link:active img {
@@ -65,4 +73,3 @@
 
 </body>
 </html>
-
