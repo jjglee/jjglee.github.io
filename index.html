@@ -5,16 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jenny Lee</title>
 
-    <!-- Poppins SemiBold -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
-
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-
-            /* Use the custom cursor on EVERYTHING */
             cursor: url("mouse.png") 0 0, auto;
         }
 
@@ -23,65 +18,50 @@
             width: 100%;
             height: 100%;
             background: #FFFFFF;
+            overflow: hidden;
         }
 
         body {
             display: flex;
             justify-content: center;
             align-items: center;
-            font-family: 'Poppins', sans-serif;
         }
 
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 52px;
-            text-align: center;
+        .portfolio-link {
+            display: inline-block;
+            cursor: url("mouse.png") 0 0, pointer;
         }
 
-        .container img {
-            width: min(550px, 85vw);
+        .portfolio-link img {
+            width: min(700px, 90vw);
             height: auto;
             display: block;
+            transition: transform 0.25s ease;
+            cursor: url("mouse.png") 0 0, pointer;
         }
 
-        .portfolio-btn {
-            display: inline-block;
-            padding: 16px 48px;
-            text-decoration: none;
-            background: #FFFFFF;
-            color: #000000;
-            font-family: 'Poppins', sans-serif;
-            font-size: 36px;
-            font-weight: 600;
-            line-height: 1;
-            letter-spacing: 0;
-            border: none;
-            transition: color .25s ease;
+        .portfolio-link:hover img {
+            transform: scale(1.06);
         }
 
-        .portfolio-btn:hover {
-            color: #B9B9B9;
+        .portfolio-link:active img {
+            transform: scale(1.02);
         }
     </style>
 </head>
 
 <body>
 
-    <div class="container">
+    <a
+        class="portfolio-link"
+        href="https://jjglee.wixsite.com/design"
+        aria-label="View Jenny Lee's Portfolio">
 
         <img
-            src="Jenny-lee-tofu-daisy.gif"
-            alt="Jenny Lee and Tofu">
+            src="jenny-notebook.gif"
+            alt="Jenny Lee Notebook">
 
-        <a
-            class="portfolio-btn"
-            href="https://jjglee.wixsite.com/design">
-            View My Portfolio
-        </a>
-
-    </div>
+    </a>
 
 </body>
 </html>
