@@ -13,11 +13,19 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+
+            /* Use the custom cursor on EVERYTHING */
+            cursor: url("mouse.png") 0 0, auto;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            background: #FFFFFF;
         }
 
         body {
-            background: #FFFFFF;
-            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -28,34 +36,32 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 32px;
+            gap: 52px;
+            text-align: center;
         }
 
-        img {
-            width: min(450px, 80vw);
+        .container img {
+            width: min(500px, 85vw);
             height: auto;
             display: block;
         }
 
-        .enter-btn {
+        .portfolio-btn {
             display: inline-block;
-            padding: 14px 42px;
+            padding: 16px 48px;
+            text-decoration: none;
             background: #FFFFFF;
             color: #000000;
-            text-decoration: none;
             font-family: 'Poppins', sans-serif;
-            font-size: 30px;
+            font-size: 36px;
             font-weight: 600;
             line-height: 1;
             letter-spacing: 0;
             border: none;
-            border-radius: 0;
-            cursor: pointer;
-            transition: color 0.25s ease;
+            transition: color .25s ease;
         }
 
-        .enter-btn:hover {
-            background: #FFFFFF;
+        .portfolio-btn:hover {
             color: #B9B9B9;
         }
     </style>
@@ -66,11 +72,11 @@
     <div class="container">
 
         <img
-            src="https://github.com/jjglee/jjglee.github.io/blob/main/jenny-tofu.gif?raw=true"
-            alt="Jenny Lee">
+            src="jenny-lee-tofu.gif"
+            alt="Jenny Lee and Tofu">
 
         <a
-            class="enter-btn"
+            class="portfolio-btn"
             href="https://jjglee.wixsite.com/design">
             View My Portfolio
         </a>
